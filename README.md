@@ -15,5 +15,26 @@ Search for C/C++ and install the extension provided by Microsoft.
 # Step 3: Install a C Compiler
 To compile and run C programs, you'll need a C compiler. The most commonly used one is GCC (GNU Compiler Collection). You can install it via the MSYS2 software distribution.
 
+Download and install MSYS2 from the official website.
+Open the MSYS2 MSYS terminal from the Start menu.
+Update the package database and base packages:
+ 
+pacman -Syu
 
+Close the terminal and open it again to ensure the changes take effect.
+Install the GCC compiler and other necessary tools:
+
+
+pacman -S base-devel mingw-w64-x86_64-toolchain
+
+
+Add MSYS2 to your system PATH by editing your environment variables:
+Right-click on 'This PC' or 'My Computer' and select 'Properties'.
+Click on 'Advanced system settings' and then 'Environment Variables'.
+In the 'System variables' section, find the Path variable and click 'Edit'.
+Add the following paths (adjust if your MSYS2 is installed in a different location):
+
+
+C:\msys64\mingw64\bin
+C:\msys64\usr\bin
 
