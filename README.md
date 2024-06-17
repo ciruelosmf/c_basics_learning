@@ -38,3 +38,32 @@ Add the following paths (adjust if your MSYS2 is installed in a different locati
 C:\msys64\mingw64\bin
 C:\msys64\usr\bin
 
+Build GLFW Using CMake
+Install CMake:
+
+Download and install CMake.
+Open Command Prompt and Navigate to GLFW Source Directory:
+
+sh
+Copy code
+cd C:\Libraries\GLFW
+Create a Build Directory:
+
+sh
+Copy code
+mkdir build
+cd build
+Generate Build Files with CMake:
+
+sh
+Copy code
+cmake .. -G "Visual Studio 16 2019"
+Replace "Visual Studio 16 2019" with the appropriate generator for your compiler (e.g., "MinGW Makefiles" for MinGW).
+
+Build GLFW Library:
+
+sh
+Copy code
+cmake --build .
+
+
