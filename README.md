@@ -67,3 +67,4 @@ Build GLFW Library:
 cmake --build .
 
 
+UPDATE: not able to install library (leif, custom made)  in my windows 10 environment; solution is to use linux
