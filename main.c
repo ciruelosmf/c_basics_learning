@@ -1,6 +1,9 @@
 #include <GLFW/glfw3.h>
 #include <stdio.h>
 #include <GL/gl.h>
+#include <leif/leif.h>
+
+
 
 int main() {
     // Initialize GLFW
@@ -10,7 +13,7 @@ int main() {
     }
 
     // Create a window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "GLFW Window", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Max word", NULL, NULL);
     if (!window) {
         fprintf(stderr, "Failed to create GLFW window\n");
         glfwTerminate();
@@ -19,11 +22,20 @@ int main() {
 
     // Make the window's context current
     glfwMakeContextCurrent(window);
+    lf_init_glfw(800, 600, window);
+
+
+
 
     // Loop until the user closes the window
     while (!glfwWindowShouldClose(window)) {
         // Render here
         glClear(GL_COLOR_BUFFER_BIT);
+
+    lf_begin();
+    lf_end();
+
+
 
         // Swap front and back buffers
         glfwSwapBuffers(window);

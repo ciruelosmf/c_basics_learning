@@ -3,5 +3,6 @@
         "glfw3.h": "c",
         "stdio.h": "c",
         "gl.h": "c"
-    }
+    },
+    "makefile.makefilePath": "C:\\Users\\p\\Documents\\estudios\\01\\projects\\c_basics_learning\\leif"
 }
